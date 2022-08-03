@@ -1,0 +1,526 @@
+// CSS reset
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// General style
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+.my-1 {
+  margin: 0.5rem auto;
+}
+.my-2 {
+  margin: 2rem auto;
+}
+.my-3 {
+  margin: 3rem auto;
+}
+.my-4 {
+  margin: 4rem auto;
+}
+.my-5 {
+  margin: 5rem auto;
+}
+.p-1 {
+  padding: 0.5rem;
+}
+.p-2 {
+  padding: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+
+// Form
+.logo-text {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.logo-img {
+  width: 45px;
+}
+.logo-holder {
+  width: fit-content;
+  margin: 0rem auto;
+  align-items: center;
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+.input-form {
+  width: 25%;
+  margin: 2rem auto;
+  text-align: start;
+}
+.input-label {
+  display: flex;
+  margin: 0.5rem 0;
+}
+.form-control {
+  width: 100%;
+  border: 2px solid rgb(235, 235, 235);
+  border-radius: 5px;
+  padding: 0.7rem;
+  &:focus {
+    outline: none;
+    border: 2px solid rgb(103, 103, 103);
+  }
+}
+::placeholder {
+  color: rgb(170, 181, 198);
+  font-weight: 500;
+}
+.submit {
+  width: 25%;
+  background-color: rgb(103, 77, 228);
+  border: 2px solid rgb(103, 77, 228);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+.sub-heading {
+  color: rgb(110, 125, 147);
+}
+.line {
+  height: 1.5px;
+  background-color: rgb(237, 237, 237);
+}
+.line-compeleted {
+  background-color: rgb(103, 77, 228);
+  height: 100%;
+}
+.pagination-holder {
+  width: 22%;
+  position: relative;
+  padding: 1.25rem 0;
+}
+.page {
+  width: 40px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(117, 116, 116);
+  position: absolute;
+  background-color: white;
+  top: 0%;
+}
+.compeleted {
+  background-color: rgb(103, 77, 228);
+  color: white;
+}
+.page-1 {
+  left: 0;
+}
+.page-2 {
+  left: 29.5%;
+}
+.page-3 {
+  right: 29.5%;
+}
+.page-4 {
+  right: 0;
+}
+.width25 {
+  width: 20%;
+}
+.width50 {
+  width: 50%;
+}
+.width75 {
+  width: 80%;
+}
+.width100 {
+  width: 100%;
+}
+.optional {
+  color: lightgray;
+}
+.example-url-span {
+  border: 2px solid rgb(235, 235, 235);
+  border-right: 1px solid rgb(235, 235, 235);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.7rem;
+  background-color: rgb(249, 249, 253);
+  color: rgb(168, 167, 167);
+  font-size: 0.9rem;
+}
+.example-url {
+  border-left: 1px solid rgb(235, 235, 235);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.eden-form {
+  display: flex;
+  justify-content: space-between;
+}
+.eden-card {
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  width: 47%;
+  border: 2px solid rgb(232, 232, 232);
+  border-radius: 5px;
+  svg {
+    font-size: 1.5rem;
+  }
+  h3 {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  p {
+    line-height: 1.2rem;
+    color: rgb(173, 173, 173);
+  }
+}
+.eden-card-selected {
+  border: 2px solid rgb(103, 77, 228);
+  svg {
+    color: rgb(103, 77, 228);
+  }
+}
+.tick-mark {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(103, 77, 228);
+  svg {
+    color: white;
+  }
+  margin: 1rem auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pagination-holder {
+    width: 32%;
+  }
+  .input-form {
+    width: 35%;
+  }
+  .submit {
+    width: 35%;
+  }
+  .page {
+    width: 42px;
+    height: 42px;
+    top: -3%;
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .eden-card {
+    padding: 1.2rem 0.8rem;
+    svg {
+      font-size: 1.3rem;
+    }
+    h3 {
+      padding: 0.8rem 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+    p {
+      line-height: 1.1rem;
+      color: rgb(173, 173, 173);
+    }
+  }
+  .page-2 {
+    left: 28.5%;
+  }
+  .page-3 {
+    right: 28.5%;
+  }
+  .width75 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .pagination-holder {
+    width: 42%;
+  }
+  .submit {
+    width: 45%;
+  }
+  .input-label {
+    font-size: 0.9rem;
+  }
+  .input-form {
+    width: 45%;
+  }
+  .page-2 {
+    left: 29%;
+  }
+  .page {
+    width: 40px;
+    height: 40px;
+    top: -1%;
+    font-size: 0.7rem;
+  }
+  .heading {
+    font-size: 1.9rem;
+  }
+  .width75 {
+    width: 81%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .pagination-holder {
+    width: 45%;
+  }
+  .input-form {
+    width: 50%;
+  }
+  .submit {
+    width: 50%;
+  }
+  .input-label {
+    font-size: 0.9rem;
+  }
+  .page {
+    width: 35px;
+    height: 35px;
+    top: 5%;
+    font-size: 0.6rem;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .eden-card {
+    padding: 1rem 0.7rem;
+  }
+  .width75 {
+    width: 81%;
+  }
+  .example-url-span {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pagination-holder {
+    width: 50%;
+  }
+  .input-form {
+    width: 55%;
+  }
+  .submit {
+    width: 55%;
+  }
+  .page {
+    width: 35px;
+    height: 35px;
+    top: 7%;
+    font-size: 0.6rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .sub-heading {
+    font-size: 0.9rem;
+  }
+  .eden-form {
+    flex-wrap: wrap;
+  }
+  .eden-card {
+    width: 100%;
+    margin-top: 1rem;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .width75 {
+    width: 80%;
+  }
+  .example-url-span {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pagination-holder {
+    width: 55%;
+  }
+  .input-form {
+    width: 65%;
+  }
+  .submit {
+    width: 65%;
+  }
+  .page-2 {
+    left: 27%;
+  }
+  .page-3 {
+    right: 27%;
+  }
+  // .page {
+  //   width: 35px;
+  //   height: 35px;
+  //   top: 7%;
+  //   font-size: 0.6rem;
+  // }
+  // .heading {
+  //   font-size: 1.5rem;
+  // }
+  // .sub-heading {
+  //   font-size: 0.9rem;
+  // }
+  // .eden-card {
+  //   p {
+  //     font-size: 0.8rem;
+  //   }
+  // }
+  // .width75 {
+  //   width: 80%;
+  // }
+  // .example-url-span {
+  //   font-size: 0.5rem;
+  // }
+}
